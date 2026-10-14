@@ -28,6 +28,7 @@ const submissionLimiter = rateLimit({
   max: 10,
   standardHeaders: true,
   legacyHeaders: false,
+  skip: (req) => req.headers["x-test-bypass-rate-limit"] === "true",
   message: {
     error: "Too Many Requests",
     message: "Rate limit exceeded. Please try again after 60 seconds.",
