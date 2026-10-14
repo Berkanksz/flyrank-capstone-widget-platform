@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Customer Test Site (Different Origin)</title>
+  <style>
+    body {
+      font-family: system-ui, sans-serif;
+      padding: 40px;
+      background: #f8fafc;
+    }
+    .hero {
+      max-width: 600px;
+      margin: 0 auto 30px auto;
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+  <div class="hero">
+    <h1>Welcome to Customer Store</h1>
+    <p>This page simulates a real client website running on an independent origin (e.g. port 5500), embedding our lead-capture widget via script tag.</p>
+  </div>
+
+  <!-- The Embed Snippet -->
+  <script
+    src="http://localhost:3000/v1/widget.v1.js"
+    data-widget-id="wid_newsletter"
+    data-api-base="http://localhost:3000"
+  ></script>
+</body>
+</html>
