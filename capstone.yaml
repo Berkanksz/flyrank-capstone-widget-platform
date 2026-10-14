@@ -1,0 +1,12 @@
+run: "npm start"
+seed: "npm run seed"
+test: "npm test"
+base_url: "http://localhost:3000"
+endpoints:
+  health: "/health"
+  widget_bundle: "/v1/widget.v1.js"
+  widget_config: "/v1/widgets/:id/config"
+  public_submission: "/v1/submissions"
+  dashboard_widgets: "/v1/dashboard/widgets"
+  dashboard_submissions: "/v1/dashboard/submissions"
+  dashboard_stats: "/v1/dashboard/stats"
